@@ -1,0 +1,174 @@
+; File written on Wed Dec 15 17:47:40 2021
+; dnssec_signzone version 9.16.1-Ubuntu
+contoso.local.		604800	IN SOA	dns1.contoso.local. root.contoso.local. (
+					9          ; serial
+					604800     ; refresh (1 week)
+					86400      ; retry (1 day)
+					2419200    ; expire (4 weeks)
+					604800     ; minimum (1 week)
+					)
+			604800	RRSIG	SOA 8 2 604800 (
+					20220114164740 20211215164740 16288 contoso.local.
+					AtlULW1AffUa3/ejuRFWmz6+77pkQedg7slc
+					zyknTaNdo62wiJkIyaHVv8VXoXlvCHCqA1Tn
+					UKqbKwdCGWu53GOTbdgCVTtYOMjeIrIgYPWP
+					fm3Y9QOx/CibDa9vVmQ6ENh+rNmkvxgdU0WU
+					PhLls++LatLfoNHTb3fImywY4fh7IzEnlv42
+					sm5pmCygka9gKpZUUoumrxdpLB9n4DbD5W4o
+					nlvqKAC9rXW3fxDeu+w7hKfFHxmYj38ddzUL
+					4ozo+kESZf3/RIo32COOd+vmOVVfOIci32vZ
+					is9s+3U++1copOFwA7yC9nMMGp4fYIX69hKV
+					ze3m9BrVgawJ3aNQDg== )
+			604800	NS	dns1.contoso.local.
+			604800	NS	dns2.contoso.local.
+			604800	RRSIG	NS 8 2 604800 (
+					20220114164740 20211215164740 16288 contoso.local.
+					BmtqD0XJrnlRo6rfzHdR1gBU8ahJnEWw+C5S
+					6TiMP2rXqKKSRt4i79OY8/twhrZx24LOiGFI
+					OjT0wqc51TjrA1Kpz6lMUeCX+mgsIj98FktW
+					tfFGSTHbhQfA7lqX1n26vU2AGzh1iFbcY/93
+					5bXS3PgQvSegom33nwLtkiFfXRIOf2k+rN8S
+					O88A1GTpnQtvLE/vYt9dNT3vT0VvN7j5FXnh
+					QQcmTH4aZLRHlj7Udy0MVWxXdjfoIkDT6vGd
+					QOtwZAYVbZFQAVr+ZMwVTpiVcGI0vn+7Z1Ym
+					jcTwGAc5fzX2GWs6W/DbSA5+g6GmF6Ygxkfe
+					h9jHGd8f4wmIiYQpqA== )
+			604800	NSEC	dns1.contoso.local. NS SOA RRSIG NSEC DNSKEY
+			604800	RRSIG	NSEC 8 2 604800 (
+					20220114164740 20211215164740 16288 contoso.local.
+					VkviFcx1P6eUsItaIrR/JQY6qCwFZvliLKM2
+					6vwAbWXv1u+gknV6/T1qvpjsSwLiWV4pJcxa
+					ps6wPzG5CT2gQ34uRRlrWXwdPTsTIOSHVJWK
+					Qheqze5kietF2gQvmBhBmBtvs3oP+ZoVpNPX
+					3CYTxoqEJzuWanVQ2bg7BXVLlcXAJTqwNlrG
+					ROUS77yTqKYZhOeWn2JkBk/3z1wDB9ufK6OO
+					frdI8wq7XFvhySbZjKlXqHax6nf1GpzciPBH
+					HM978vLlBrr002YHUoFXvd4+GtbjTQlFaZ7D
+					6qSCngObR2CxK2prrFQz47Iz7vNiqby0+d4b
+					4ocbszmYt1Ha+WhCpw== )
+			604800	DNSKEY	256 3 8 (
+					AwEAAcDEgi61zWPc68H68VQ+SFvHnG7713mx
+					NTcbEpHBa6xxPA9BjxL4vfuMFk+Tlcw5Tm9B
+					jKYEXSWlp1udnXvWvkkSIfA+JZgGPJcRj9Vt
+					U8Rvd6lLyG+gm6NPNjTkQgM/USEXYVgNie0n
+					Fn+GbEBTqCYJL1n4ZcAXc9YZKJHfYG0aXTkP
+					XaO2j7A4sntMGPpqnTFqGc9qj5fBfnk6zGe9
+					sMa12tKs3u5m1X6dX4ONhLfeRL8X/ai1BnGQ
+					Ve5eXDM0ljrD+yo8fyXJdu5At6F8mxKpEOmM
+					cibWgfltz0m9bUcNl6Xi264+uKV+7ZNalP4H
+					bl9TvXSl+QLeQwCmR2I94Dc=
+					) ; ZSK; alg = RSASHA256 ; key id = 16288
+			604800	DNSKEY	257 3 8 (
+					AwEAAbF7N/0W8jcyYgb+fNtistNZVoRQAe31
+					vo/vVbM2E5VHURO13wAcycM7jrrc6usnlq2v
+					x7HC4mnhiHJ11AWsthAv/RjaBRcqaZMDH8YO
+					pNQ8jMyN6OUDReU/bmIP/liJoggf+zeADUWQ
+					eXZKPPYzVs1C7Yv6P+GUh/Qrf+z7FTVL+ur5
+					RsWHwRfeBy1lq/WNnIJ9/uSfTSRXxRZDwiGg
+					kv7D5OkQnueTWkpIjA/Vjs018SnFkJmH0/pL
+					je9ALdndOYzKdt6CExlFiOCDBTZRfxvZxqc1
+					ua7xdmI3VVJYrz5J0GFW2IbxHuHuJVx7D2Ff
+					pN10SEblmD/9W1Tz5c6mvJc=
+					) ; KSK; alg = RSASHA256 ; key id = 37985
+			604800	RRSIG	DNSKEY 8 2 604800 (
+					20220114164740 20211215164740 16288 contoso.local.
+					btsy+9YLbgicCCF0FuHAzqad80TxQenYjZc3
+					dqv/zsUkdHNwSg2BUOBL36JGblb3hQFS8XRJ
+					KosOfp+acJHYfFn1VLln/rAvtDUFAgG3kxmI
+					9DgBS91I+dHYdPjg4gJTKQ4xQ2YvG5xX05ES
+					+BS/95H22P/0Ty2X/KoekHNyEsBe0YyvSHUR
+					ZwRX+QSL3wZlFR+FglnGsE+6wgW3Tde+RHD3
+					9M5dOWPc3SsrqBWfNbaP1KsYIcLrfnXmfDE5
+					QHyqBHl8LIb3QOPr3nyKHd3p+j4TYSqdIBzf
+					oayUoUcfZpwmx5A40IqmKRY89orgsaO21RnT
+					sm7oxYlofYmm8CFN3Q== )
+			604800	RRSIG	DNSKEY 8 2 604800 (
+					20220114164740 20211215164740 37985 contoso.local.
+					FpCH4p0Lau5531QypNHiV5fvqWozqGiChaRg
+					lp2jyExT5xHIUNvGP+MOivm7yEDzXvzd2oOT
+					TVgfIq+bLWakIKoBAbX0haZ0CboqXnXwf6/q
+					cRGGKZGTI6UA2SXhZYxEcYI5stDRbpYPkAWm
+					P6yID9IA5MmHNsoFTW1p7giCyRW8blk1eRoF
+					9LImQ9KVJkmNkcILJD5PJTG/mBabvb2AoRki
+					sM+BAe10HH+6aFLO9Qt1N3nxe2/h4XmwRHKn
+					mV1KPGBUijkFoJ2Wh5uB/0K9pPoh8vGamLlo
+					G9Acpnbhp59DScWEGkJSOl7OQyR4gcIcijqf
+					mr8BQ10dGExaRx7EIA== )
+dns1.contoso.local.	604800	IN A	192.168.0.144
+			604800	RRSIG	A 8 3 604800 (
+					20220114164740 20211215164740 16288 contoso.local.
+					sQ7Cha8eKRURHtC5Uh7Om58DJxWYlprODYLC
+					kK7yM190LXPXSH6CCvONjrzUoAdUVGCSow7E
+					iS0cldcw/EV1bMNFclYK2dcxUq2iF4cDulEh
+					FrwwryD4qQZydC3WP965+7/Tvq1Bfw6y/saj
+					e9y4ls7YqBfqEFxlFr5FaN5Nqo+OKlfwpCqF
+					qbCLoC8BybRvoOyxVvahf1paVgu5l/55qqUu
+					MCy7uadvri4i7oeukGVd5dItuQtIWVqknNUP
+					zVaTQw4UF9SSwY5UXTzf4PTr/ZWuMCV9BTXu
+					lsdZFT/WCuPeES/I02y6xsvIGn/R8kqGs++q
+					PGonfvCg5MneJ4lSUw== )
+			604800	AAAA	fe80::a00:27ff:fe38:96e0
+			604800	RRSIG	AAAA 8 3 604800 (
+					20220114164740 20211215164740 16288 contoso.local.
+					aZkfbIBXsQuVKlWOYEz5br9rZByRJdzgZD08
+					LjQj05wbL3gbfzCaT3bHa2l5E+JWqa6C0uJu
+					Q3kzXrAIzAqq9OGhiAreOIIoCBCmKprJa2gu
+					8CDO1GlgSzi6B41J3OZG8501hfrwoxJJm/vh
+					V6boFuW1MTRlnOueIyjzaL08JW0PY+J7NRTV
+					cuj9oAhsoX7EXNrfDzW/Avmw48nOP6k1Dpr0
+					WAGmOw9m8/MczWBZQdaaZEOZHNx2+HyxfsJT
+					T74V7o8xI7BsEPoTZ/2lGAI0KDOeB6bAzE9q
+					Op5esnn+L3BraXcrS3uCZHL2Yt8BRQZsjgzt
+					Wx/b2se7AUaBGJ9BNg== )
+			604800	NSEC	dns2.contoso.local. A AAAA RRSIG NSEC
+			604800	RRSIG	NSEC 8 3 604800 (
+					20220114164740 20211215164740 16288 contoso.local.
+					IZQeSAN/dAkEPetY3MEfX7wXWr7krkT2xDfb
+					e134ZD3MYy8GzfjlAjPYw2yRUKVJgEBXUEno
+					T2X8UUtROait1NGhp78u2aEq2PTGkqdL8NzL
+					wvOxZ8vQNkRw9Ey5Bc4qMEmSBBfPJrzxRxEg
+					GKs1ZQjtz7Aqa6hopprtswDKOQvy8sxCqURy
+					BVN/IouXQeJGpA31NoNN6cgZoC0fAVSOC2sx
+					gwdc4ulNh96gQbthOXJeTH4RrQWvyFALjcY9
+					w46d8j7d44khWbaeU/nx7wI1OD4KuL25vVqS
+					pZbk0cj8TXkFRyK+IJMogEIc7Vznb6bLvuF2
+					ojZN0+cx3ylxiC90Xg== )
+dns2.contoso.local.	604800	IN A	192.168.0.187
+			604800	RRSIG	A 8 3 604800 (
+					20220114164740 20211215164740 16288 contoso.local.
+					CgRRRYLBHZmtbH1z+G8o1dN+dd3rShguAsrE
+					f4lxzu0avLN9sHtFTokPrMivWLB5C7/2qsQ6
+					6c/h63U1C1xMQkUzxMf2RcaBtRoD/WfQK8dH
+					fi/yNz4EB1l6yGP+/64IR/A6dUsScNrS69JI
+					/jnKquLJmbgICVkoNUF3tqTpo4ABIFJkPMjy
+					cMBdDhCZenaOtzJ/SWDbovaEHPcQJITNkR3y
+					4opWvC22wgdTJNK6G1byBVaKGOSwsnL5C23y
+					etmgE+u3b6Hni+AL6H/sfM/Mz13LZbxZH2AE
+					kmJLTueWI29hKgNTsOyWt/e/hR/fBHAXFzPN
+					qFmz7gS5Yz49VVgdNQ== )
+			604800	AAAA	fe80::a00:27ff:fe89:64f3
+			604800	RRSIG	AAAA 8 3 604800 (
+					20220114164740 20211215164740 16288 contoso.local.
+					Knw/Dmk5jz33WDRci9vSKd2t5i8PHpvIBiN9
+					W7rFXgagIzAkW7BJ0T0FG78l6j7ldwbFbL1K
+					gZBZupGXOTIlAe4BP4/q8W33nv1Hg+bt9MGP
+					k+jgkB8opJgYCC8KITy6boVB0xteTM/DUNpp
+					2ruXmM3yHGevOOAOZzL/SR7DrnZm2cP6x2+a
+					nzVx1J2w4WsE4678jZJQnYDm7gjSMdsNGdY5
+					xxZOBvAB15cYYvk4h7d+gx/DF0RAeMagayvs
+					CtQKwACFhHCGb9CqxGVZM6wm3pV8DdXyIKiU
+					t1JKYenfK06+i7xZJc1jm6c8c1WTWoOjd3np
+					egWE88koxduCCLvqJQ== )
+			604800	NSEC	contoso.local. A AAAA RRSIG NSEC
+			604800	RRSIG	NSEC 8 3 604800 (
+					20220114164740 20211215164740 16288 contoso.local.
+					sGM0V6ctMF/WRygcjvj/irlAYJgYjJA6fsZc
+					jdCAqwaUNJOrlht2X7ATm2IpHJRF2plL+W7M
+					s5XyKdGt+IjtlRODYDrEX3YAOe813V4ve3qv
+					4XeM7X98jTZXafrZsYR4/Nr/eTEjImge7vJj
+					YyUt8cdIOib7K4h9faKkmxkUlJGP7HsK5lVe
+					tzw109KgdjQZgXrVGu575Urhjjkd2IcwVri3
+					F4fKRUcvu1LUN2cvMFNK4gI6zQ/nAY2QrpjM
+					rRsp1wvUzH8RhT9+5m1K0Tzzro/QcbsrbiYi
+					8CWeGJY6m6bzBl4KnQZqMxo1ZpCZeCVRgUxg
+					FSZn/sVggWkCbdZSow== )
